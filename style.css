@@ -9,11 +9,20 @@ body {
     justify-content: center;
 }
 
-
+#mainUICard::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.674);
+    width:100%;
+    height: 100%; 
+    position: absolute;
+    overflow: hidden;
+    z-index: 50;
+    display: flex;
+}
 #mainUICard {
     background-color: rgb(36, 48, 49);
-    width:65vw;
-    height: 460px; 
+    width:55vw;
+    height: 480px; 
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -36,14 +45,13 @@ body {
 #startExp {
     position: absolute;
     width:100%;
-    height:460px;
-    background-color: rgb(35, 35, 35);
+    height:100%;
+    background-color: rgb(222, 222, 222);
     z-index: 1000;
-    color:white;
+    color:rgb(0, 0, 0);
     display:flex;
     align-items: center;
     justify-content: center;
-    animation:  backgroundchange2 12s infinite;
 }
 
 #startExpBTN {
@@ -53,7 +61,7 @@ body {
     padding:.6rem 1rem;
     border:white solid .1em;
     border-radius: 24px;
-    box-shadow: rgb(15, 172, 220) 0px 0px 3px 1px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 3px 1px;
     cursor: pointer;
 }
 
@@ -64,7 +72,7 @@ body {
 
 
 #openLanding {
-    width:94%;
+    width:64%;
     height:90%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.903);
@@ -75,9 +83,10 @@ body {
     justify-content: center;
 }
 
+
 #formWrapper {
-    width:60%;
-    height:100%;
+    width:90%;
+    height:90%;
     background-color: rgba(0, 0, 0, 0.817);
     display: flex;
     flex-direction: column;
@@ -94,7 +103,7 @@ body {
     position: relative;
     bottom: 10%;
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.5em;
     display: flex;
     flex-direction: column;
 }
@@ -104,7 +113,7 @@ body {
     width:100%;
     bottom:-40%;
     position: absolute;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.052),white 50%,rgba(255, 255, 255, 0.058) 100%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.052),rgb(41, 183, 215) 50%,rgba(255, 255, 255, 0.058) 100%);
 }
 
 #formQuestion {
@@ -119,7 +128,7 @@ body {
     top:5%;
     box-sizing: border-box;
     border:1px solid aqua;
-    padding:.2em .4em;
+    padding:.3em .6em;
     color:aqua;
     cursor: pointer;
     border-radius: 12px;
@@ -138,13 +147,13 @@ body {
 }
 
 #firstName {
-    width: 160px;
+    width: 120px;
     position: relative;
     bottom:14%;
     text-align: center;
 }
 #animalName {
-    width: 160px;
+    width: 120px;
     position: relative;
     bottom:13%;
     text-align: center;
@@ -167,7 +176,11 @@ body {
 #returnText {
     width: 60%;
     text-align: center;
+    border:solid white 2px;
+    padding : 8em 2em;
 }
+
+
 
 
 
@@ -243,13 +256,15 @@ body {
     bottom:12%;
     z-index: 100;
     left:9%;
+    opacity: .7;
 }
 #polarBear2 {
     position: absolute;
     width:70px;
     bottom:10%;
     z-index: 100;
-    right:9%;
+    right:5%;
+    opacity: .8;
 }
 
 #polarBear3 {
@@ -259,6 +274,7 @@ body {
     z-index: 100;
     right:17%;
     animation-delay: 1s;
+    opacity: .9;
 }
 
 
@@ -269,7 +285,7 @@ body {
 .stars {
     position: absolute;
     top:20vh;
-    left:15vw;
+    left:8vw;
     transform: rotate(45deg);
     width:4px;
     height:4px;
@@ -282,7 +298,7 @@ body {
 #star2 {
     position: absolute;
     top:40vh;
-    left:10vw;
+    left:4vw;
     width:6px;
     height:6px;
     animation: starpop 5s infinite 1.5s;
@@ -298,15 +314,15 @@ body {
 #star4 {
     position: absolute;
     top:40vh;
-    left:55vw;
+    left:10vw;
     width:7px;
     height:7px;
     animation: starpop 5s infinite .5;
 }
 #star5 {
     position: absolute;
-    top:35vh;
-    left:40vw;
+    top:10vh;
+    left:2vw;
 }
 #star6 {
     position: absolute;
