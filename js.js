@@ -1,7 +1,5 @@
-
-
 const startExp = () => {
-    const polarBear = document.getElementById('polarBear');
+    const polarBear = document.getElementById('polarBear1');
     const startExp = document.getElementById('startExp');
     const startExpLanding = document.getElementById('openLanding');
 

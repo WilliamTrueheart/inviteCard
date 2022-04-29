@@ -12,7 +12,7 @@ body {
 
 #mainUICard {
     background-color: rgb(22, 29, 30);
-    width:800px;
+    width:65vw;
     height: 460px; 
     position: relative;
     overflow: hidden;
@@ -22,7 +22,7 @@ body {
 }
 #mainUICard::after {
     content: '';
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(15deg, rgb(175, 218, 224), white 100%);
     width:100%;
     height: 30%;
     bottom:0; 
@@ -33,14 +33,13 @@ body {
 #startExp {
     position: absolute;
     width:100%;
-    height:73%;
-    background-color: rgb(22, 29, 30);
-    z-index: 50;
+    height:460px;
+    background-color: rgb(35, 35, 35);
+    z-index: 1000;
     color:white;
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-bottom:150px;
 }
 
 #startExpBTN {
@@ -64,6 +63,61 @@ body {
     z-index: 105;
     border-radius: 12px;
     display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#formWrapper {
+    width:60%;
+    height:92%;
+    background-color: rgba(0, 0, 0, 0.697);
+    display: flex;
+    flex-direction: column;
+    color:white;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.085);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#formHeader {
+    position: relative;
+    bottom: 6%;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+#formQuestion {
+    position: relative;
+    top:18%;
+    color:aqua;
+    font-size: 1.1rem;
+}
+
+.radioButtons {
+    position: relative;
+    top:12%;
+}
+
+.radioText {
+    position: relative;
+    top:2.2%;
+    line-height: 25px;
+}
+
+#firstName {
+    width: 160px;
+    position: relative;
+    bottom:14%;
+    text-align: center;
+}
+#animalName {
+    width: 160px;
+    position: relative;
+    bottom:13%;
+    text-align: center;
+    font-size: .8em;
 }
 
 
@@ -134,13 +188,29 @@ body {
 
 }
 
-#polarBear {
+#polarBear1 {
     position: absolute;
     width:100px;
     bottom:15%;
     z-index: 100;
-    left:44%;
+    left:16%;
 }
+#polarBear2 {
+    position: absolute;
+    width:70px;
+    bottom:10%;
+    z-index: 100;
+    right:9%;
+}
+
+#polarBear3 {
+    position: absolute;
+    width:70px;
+    bottom:15%;
+    z-index: 100;
+    right:20%;
+}
+
 
 .polarBearActive {
     animation:sledpop 2s infinite;
@@ -148,8 +218,8 @@ body {
 
 .stars {
     position: absolute;
-    top:20%;
-    left:20%;
+    top:20vh;
+    left:15vw;
     transform: rotate(45deg);
     width:4px;
     height:4px;
@@ -158,6 +228,79 @@ body {
     opacity:1;
     animation: starpop 5s infinite;
 }
+
+#star2 {
+    position: absolute;
+    top:40vh;
+    left:10vw;
+    width:6px;
+    height:6px;
+    animation: starpop 5s infinite 1.5s;
+}
+#star3 {
+    position: absolute;
+    top:20vh;
+    width:6px;
+    height:6px;
+    left:50vw;
+    animation: starpop 5s infinite 1.5s;
+}
+#star4 {
+    position: absolute;
+    top:40vh;
+    left:55vw;
+    width:7px;
+    height:7px;
+    animation: starpop 5s infinite .5;
+}
+#star5 {
+    position: absolute;
+    top:35vh;
+    left:40vw;
+}
+#star6 {
+    position: absolute;
+    top:35vh;
+    left:27vw;
+    animation: starpop 5s infinite .5;
+}
+
+#moon {
+    width:70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 360px;
+    position: absolute;
+    right:20%;
+    animation: moonglow 3s infinite;
+}
+
+.snowMounds {
+    width:60%;
+    height:400px;
+    border-top-left-radius: 230px;
+    border-top-right-radius: 230px;
+    background-color: white;
+    position: absolute;
+    left:-22%;
+    top:69%;
+}
+
+#snowMound1 {
+    border-top-left-radius: 260px;
+    border-top-right-radius: 260px;
+    left:10%;
+    top:69%;
+
+}
+#snowMound3 {
+    border-top-left-radius: 260px;
+    border-top-right-radius: 260px;
+    left:60%;
+    top:69%;
+}
+
+
 
 
 
@@ -193,5 +336,16 @@ body {
     }
     100% {    
         opacity: 1;
+    }
+}
+@keyframes moonglow {
+    0% {
+       box-shadow: white 0px 0px 6px 2px;
+    }
+    50% {
+        box-shadow: white 0px 0px 16px 5px;
+    }
+    100% {    
+        box-shadow: white 0px 0px 6px 2px;
     }
 }
