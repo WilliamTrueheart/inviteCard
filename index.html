@@ -17,13 +17,14 @@
 
             <div id="openLanding">
                 <form id="formWrapper" action="">
-                    <h1 id="formHeader">we can't way to celebrate with you</h1>
+                    <h1 id="formHeader">we can't way to celebrate with you!</h1>
                     <h2 id="formQuestion">( btw, what's your jam?? )</h2>
-                    <input type="text" id="firstName" placeholder="first name">
-                    <input type="text" id="animalName" placeholder="animal you think is amazing">
-                    <input type="radio" id="radio1" class="radioButtons"><span class="radioText">black coffee. no frills.</span>
-                    <input type="radio" id="radio1" class="radioButtons"><span class="radioText">hot or iced tea.</span>
-                    <input type="radio" id="radio1" class="radioButtons"><span class="radioText">it's pretty sophisticated, you wouldn't understand...</span>
+                    <input type="text" id="firstName" name='form' placeholder="first name">
+                    <input type="text" id="animalName" name='form' placeholder="animal you think is amazing">
+                    <input type="radio" id="radio1" name='form' class="radioButtons"><span class="radioText">black coffee. no frills.</span>
+                    <input type="radio" id="radio2" name='form' class="radioButtons"><span class="radioText">hot or iced tea.</span>
+                    <input type="radio" id="radio3" name='form' class="radioButtons"><span class="radioText">it's pretty sophisticated, you wouldn't understand...</span>
+                    <div onclick="completeExp()" id="submit">submit</div>
                 </form>
             </div>
 
@@ -48,6 +49,13 @@
             <div id="snowMound3" class="snowMounds"></div>
 
             <div id="moon"></div>
+        
+            <div id="page3Wrapper">
+                <div id="returnText">
+
+                </div>
+            </div>
+        
         </div>
     </div>
 </body>
