@@ -2,7 +2,7 @@
 body {
     width:100vw;
     height:100vh;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, rgb(7, 7, 7), rgb(28, 28, 28) 50%, rgb(7, 7, 7) 100%);
     display:flex;
     padding: 0; margin:0;
     align-items: center;
@@ -56,8 +56,25 @@ body {
     flex-direction: column;
 }
 
+#startExpImg {
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-image: url('startExpImg.JPG');
+    background-size: cover;
+    opacity: .3;
+}
+
 #from {
     font-size: .8rem;
+    width:max-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:.6rem 1rem;
+    background-color: rgba(255, 255, 255, 0.423);
+    z-index: 3;
+    border:white solid .1em;
+    border-radius: 12px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 3px 1px;
 }
 input::placeholder {
     color: #000000;
@@ -68,6 +85,8 @@ input::placeholder {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
     padding:.6rem 1rem;
+    background-color: rgba(255, 255, 255, 0.669);
+    z-index: 3;
     border:white solid .1em;
     border-radius: 12px;
     box-shadow: rgb(0, 0, 0) 0px 0px 3px 1px;
@@ -75,7 +94,7 @@ input::placeholder {
 }
 
 #startExpBTN:hover {
-    background-color: rgba(255, 255, 255, 0.056);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 6px 1px aqua;
 }
 
@@ -101,6 +120,8 @@ input::placeholder {
     flex-direction: column;
     color:white;
     text-align: center;
+    gap: 2%;
+    padding-bottom: 5%;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.085);
     align-items: center;
@@ -110,7 +131,6 @@ input::placeholder {
 
 #formHeader {
     position: relative;
-    bottom: 10%;
     font-weight: 500;
     font-size: 1.5em;
     display: flex;
@@ -126,47 +146,39 @@ input::placeholder {
 }
 
 #formQuestion {
-    position: relative;
-    top:10%;
     color:aqua;
     font-size: .9rem;
 }
 
 #submit {
-    position: relative;
-    top:5%;
     box-sizing: border-box;
     border:1px solid aqua;
     padding:.3em .6em;
     color:aqua;
     cursor: pointer;
     border-radius: 12px;
+    position: relative;
+    top:2%;
 }
 
 .radioButtons {
     position: relative;
-    top:6%;
     cursor: pointer;
 }
 
 .radioText {
     position: relative;
-    top:-3.4%;
+    font-size: .7rem;
     line-height: 25px;
 }
 
 #firstName {
     width: 120px;
-    position: relative;
-    bottom:14%;
     text-align: center;
 }
 #animalName {
     width: 120px;
-    position: relative;
-    bottom:13%;
     text-align: center;
-    font-size: .8em;
 }
 
 #page3Wrapper {
@@ -472,10 +484,17 @@ input::placeholder {
     #openLanding {
         width:80vw;
     }
+    #formWrapper {
+        gap:1%;
+    }
     .radioText {
         font-size: .6rem;
     }
     #formHeader {
         font-size: 1rem;
+    }
+    #submit {
+        position: relative;
+        top:5%;
     }
 }

@@ -12,6 +12,7 @@
     <div id="mainWrapper">
         <div id="mainUICard">
             <div id="startExp">
+                <div src="startExpImg.JPG" alt="" id="startExpImg"></div>
                 <div id="startExpBTN" onclick="startExp()">open invitation</div>
                 <h3 id="from"> from Polar Coffee</h3>
             </div>
@@ -22,9 +23,9 @@
                     <h2 id="formQuestion">( btw, what's your jam?? )</h2>
                     <input type="text" id="firstName" name='form' placeholder="first name">
                     <input type="text" id="animalName" name='form' placeholder="favorite animal">
-                    <input type="radio" id="radio1" name='form' class="radioButtons"><span class="radioText">black coffee. no frills.</span>
-                    <input type="radio" id="radio2" name='form' class="radioButtons"><span class="radioText">hot or iced tea.</span>
-                    <input type="radio" id="radio3" name='form' class="radioButtons"><span class="radioText">it's pretty sophisticated, you wouldn't understand...</span>
+                    <span class="radioText">black coffee. no frills.</span><input type="radio" id="radio1" name='form' class="radioButtons">
+                    <span class="radioText">hot or iced tea.</span><input type="radio" id="radio2" name='form' class="radioButtons">
+                    <span class="radioText">it's pretty sophisticated, you wouldn't understand...</span><input type="radio" id="radio3" name='form' class="radioButtons">
                     <div onclick="completeExp()" id="submit">submit</div>
                 </form>
             </div>
