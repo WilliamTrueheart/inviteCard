@@ -52,6 +52,15 @@ body {
     display:flex;
     align-items: center;
     justify-content: center;
+    gap:2%;
+    flex-direction: column;
+}
+
+#from {
+    font-size: .8rem;
+}
+input::placeholder {
+    color: #000000;
 }
 
 #startExpBTN {
@@ -60,7 +69,7 @@ body {
     font-size: 2rem;
     padding:.6rem 1rem;
     border:white solid .1em;
-    border-radius: 24px;
+    border-radius: 12px;
     box-shadow: rgb(0, 0, 0) 0px 0px 3px 1px;
     cursor: pointer;
 }
@@ -442,5 +451,31 @@ body {
     }
     100% {    
         box-shadow: white 0px 0px 6px 2px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    #formHeader {
+        font-size: 1.2rem;
+    }
+    .radioText {
+        font-size: .8rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    #mainUICard {
+        width:90vw; 
+    }
+    #openLanding {
+        width:80vw;
+    }
+    .radioText {
+        font-size: .6rem;
+    }
+    #formHeader {
+        font-size: 1rem;
     }
 }
