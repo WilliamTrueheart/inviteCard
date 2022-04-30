@@ -28,6 +28,7 @@ const completeExp = () => {
     const radio1 = document.getElementById('radio1');
     const radio2 = document.getElementById('radio2');
     const radio3 = document.getElementById('radio3');
+    const code = document.getElementById('code');
 
     polarBear.classList.remove('polarBearActive')
     polarBear2.classList.remove('polarBearActive')
@@ -35,7 +36,10 @@ const completeExp = () => {
     page3.style.display ='flex';
     mainbox.style.boxShadow = '0px 0px 6px 1px white';
 
-    returnText.innerHTML = 'Thanks for accepting our invite ' + userNameFI + ' - ' + animal +  '.  Woah, now that\'s a nickname with some umph behind it. Stop by for our grand opening Decemeber 1st, and let us treat you to a drink, free of charge!'
+
+    code.style.display = 'flex';
+    code.innerHTML = 'please provide code at store : pchFREE0001'
+    returnText.innerHTML = 'Thanks for accepting our invite ' + userNameFI + ' - ' + animal +  '.  Woah, now that\'s a nickname with some umph behind it. Stop by for our grand opening Decemeber 1st, and let us treat you to a drink, free of charge!'  
     if (radio1.checked) {
     returnText.innerHTML = 'Thanks for accepting our invite ' + userNameFI + ' - ' + animal + '.  Woah, now that\'s a nickname with some umph behind it. Stop by for our grand opening Decemeber 1st, and let us treat you to that black coffee, free of charge!'
     }
