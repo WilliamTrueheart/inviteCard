@@ -2,7 +2,7 @@
 body {
     width:100vw;
     height:100vh;
-    background-image: linear-gradient(45deg, rgb(7, 7, 7), rgb(28, 28, 28) 50%, rgb(7, 7, 7) 100%);
+    background-image: linear-gradient(45deg, rgb(222, 222, 222), rgb(200, 200, 200) 50%, rgb(159, 159, 159) 100%);
     display:flex;
     padding: 0; margin:0;
     align-items: center;
@@ -30,7 +30,7 @@ body {
     align-items: center;
     justify-content: center;
     animation: backgroundchange 20s infinite;
-    border:white solid .2em;
+    box-shadow: grey 0px 0px 10px 1px;
 }
 #mainUICard::after {
     content: '';
@@ -70,11 +70,10 @@ body {
     width:max-content;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding:.6rem 1rem;
-    background-color: rgba(255, 255, 255, 0.423);
+    background-color: rgba(255, 255, 255, 0.754);
     z-index: 3;
-    border:white solid .1em;
     border-radius: 12px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 3px 1px;
+    box-shadow: grey 0px 0px 10px 1px;
 }
 input::placeholder {
     color: #000000;
@@ -85,17 +84,16 @@ input::placeholder {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
     padding:.6rem 1rem;
-    background-color: rgba(255, 255, 255, 0.669);
+    background-color: rgba(255, 255, 255, 0.789);
     z-index: 3;
-    border:white solid .1em;
+    box-shadow: rgb(122, 121, 121) 0px 0px 10px 1px;
     border-radius: 12px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 3px 1px;
     cursor: pointer;
 }
 
 #startExpBTN:hover {
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 6px 1px aqua;
+    box-shadow: 0px 0px 6px 1px #80c9ff;
 }
 
 
@@ -103,7 +101,7 @@ input::placeholder {
     width:64%;
     height:90%;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.903);
+    background-color: rgba(10, 11, 16, 0.903);
     z-index: 105;
     border-radius: 12px;
     display: none;
@@ -115,7 +113,7 @@ input::placeholder {
 #formWrapper {
     width:90%;
     height:90%;
-    background-color: rgba(0, 0, 0, 0.817);
+    background-color: rgba(15, 15, 24, 0.817);
     display: flex;
     flex-direction: column;
     color:white;
@@ -142,19 +140,19 @@ input::placeholder {
     width:100%;
     bottom:-40%;
     position: absolute;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.052),rgb(41, 183, 215) 50%,rgba(255, 255, 255, 0.058) 100%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.052),#80c9ff 50%,rgba(255, 255, 255, 0.058) 100%);
 }
 
 #formQuestion {
-    color:aqua;
+    color: #80c9ff;
     font-size: .9rem;
 }
 
 #submit {
     box-sizing: border-box;
-    border:1px solid aqua;
+    border:1px solid #80c9ff;
     padding:.3em .6em;
-    color:aqua;
+    color: #80c9ff;
     cursor: pointer;
     border-radius: 12px;
     position: relative;
@@ -184,13 +182,14 @@ input::placeholder {
 #page3Wrapper {
     width:100%;
     height:100%;
-    background-color: rgb(35, 35, 35);    position: absolute;
+    background-color: rgb(35, 35, 35);    
+    position: absolute;
     z-index: 1000;
-    color:white;
+    color:rgb(31, 31, 31);
     display:none;
     align-items: center;
     justify-content: center;
-    animation:  backgroundchange2 20s infinite;
+    animation: backgroundchange 20s infinite;
 }
 * {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 
@@ -198,6 +197,7 @@ input::placeholder {
     width: 60%;
     text-align: center;
     border:solid white 2px;
+    border-radius: 12px;
     padding : 8em 2em;
 }
 
@@ -390,36 +390,19 @@ input::placeholder {
 
 @keyframes backgroundchange {
     0% {
-        background-color: rgb(36, 48, 49);
+        background-color: rgb(85, 153, 205);
     }
     35% {
-        background-color:rgba(15, 40, 37, 0.903);
+        background-color: rgb(182, 222, 252);
     }
     70% {
-        background-color:rgba(25, 15, 40, 0.903);
+        background-color: rgb(86, 149, 201);
     }
     90% {
-        background-color: rgb(36, 48, 49);
+        background-color: rgb(101, 176, 233);
     }
 }
 
-@keyframes backgroundchange2 {
-    0% {
-        background-color: rgb(36, 48, 49);
-    }
-    25% {
-        background-color:rgb(15, 40, 37);
-    }
-    50% {
-        background-color:rgb(25, 15, 40);
-    }
-    75% {
-        background-color: rgb(23, 22, 49);
-    }
-    100% {
-        background-color: rgb(36, 48, 49);
-    }
-}
 
 @keyframes mountainpass {
     0% {
