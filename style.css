@@ -152,11 +152,15 @@ input::placeholder {
     box-sizing: border-box;
     border:1px solid #80c9ff;
     padding:.3em .6em;
-    color: #80c9ff;
+    color:white;
     cursor: pointer;
     border-radius: 12px;
     position: relative;
     top:2%;
+}
+#submit:hover {
+    color:skyblue;
+    background-color: rgba(255, 255, 255, 0.089);
 }
 
 .radioButtons {
@@ -168,6 +172,7 @@ input::placeholder {
     position: relative;
     font-size: .7rem;
     line-height: 25px;
+    color:skyblue;
 }
 
 #firstName {
