@@ -29,7 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: backgroundchange 20s infinite;
+    animation: backgroundchange 10s infinite;
     box-shadow: grey 0px 0px 10px 1px;
 }
 #mainUICard::after {
@@ -392,14 +392,12 @@ input::placeholder {
     0% {
         background-color: rgb(85, 153, 205);
     }
-    35% {
+    50% {
         background-color: rgb(182, 222, 252);
     }
-    70% {
-        background-color: rgb(86, 149, 201);
-    }
-    90% {
-        background-color: rgb(101, 176, 233);
+
+    100% {
+        background-color: rgb(85, 153, 205);
     }
 }
 
