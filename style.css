@@ -195,6 +195,7 @@ input::placeholder {
 #animalName {
     width: 120px;
     text-align: center;
+    margin-bottom: 2vh;
 }
 
 #page3Wrapper {
